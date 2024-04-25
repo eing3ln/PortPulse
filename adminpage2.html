@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortPulse Admin</title>
+    <link rel="stylesheet" href="adminpage.css">
+
+    <!-- Include the qrcode.js library -->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+    <header>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <body>
+        
+        <div class="w3-container w3-display-topright" style="padding:24px; padding-left:200px;">
+            <div class="w3-dropdown-hover">
+            <button class="w3-button w3-black">MENU</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+              <a href="#" class="w3-bar-item w3-button">CUSTOMER</a>
+              <a href="#" class="w3-bar-item w3-button">DEVICE</a>
+              <a href="#" class="w3-bar-item w3-button">REPORTS</a>
+              <a href="#" class="w3-bar-item w3-button">LOG OUT</a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="logo">
+            <img src="portpulseLOGO.png" alt="PortPulse Logo"> <h1> PORTPULSE </h1>
+        </div>
+        <div class="welcome">
+            <h2>Welcome, Admin!</h2>
+        </div>
+
+    <h3>Lost Luggage? Not on Our Watch!</h3>
+    Tracking with PortPulse where your luggage is always in Sight!
+
+    <main>
+        <section class="dashboard">
+            <h2>Generate QR Code for your Luggage</h2>
+                <button type="button" onclick="generateQR()">Generate QR Code</button>
+        </section>
+
+        <section class="recent-activity">
+            <h2>Recent Activity</h2>
+
+            <style>
+                table, th, td {
+                  border:1px solid black;
+                }
+            </style>
+
+            <h4>List of all active luggage trackers</h4>
+            <table id="qrTable" style="width:80%">
+              <tr>
+                <td id="Lnum" name="Lnum">Luggage Number</td>
+                <td  id="stat" name="stat">Status</td>
+                <td  id="loc" name="loc">Location</td>
+                <td  id="qr" name="qr">QR</td>
+              </tr>
+            </table>
+        </section>
+
+        <section class="map">
+            <h2>Luggage Map Tracking</h2>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PortPulse. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
