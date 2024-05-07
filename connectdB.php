@@ -1,4 +1,10 @@
 <?php
+/* Database credentials 
+	servername = "localhost"
+	username = "root"
+	password = ""
+	databasename = "portpulse" */
+
 	// Database connection
 	$conn = mysqli_connect("localhost","root","","portpulse");
 
